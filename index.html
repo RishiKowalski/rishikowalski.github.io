@@ -8,31 +8,9 @@
  <title>Rishi Kowalski</title>
 </head>
 <link rel="stylesheet" href="styles.css">
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    console.log( "ready!" );
-
-    $(".extension").hide();
-    $(".readless").hide();
-
-    $(".readmore").click(function(e){
-        e.preventDefault();
-        $(this).next(".extension").show();
-        $(this).parent().find(".readless").show();
-        $(this).hide();
-        $(this).parent().next(".readless").hide();
-    });
-
-    $(".readless").click(function(e){
-        e.preventDefault();
-        $(this).prev(".extension").hide();
-        $(this).parent().find(".readmore").show();
-        $(this).hide();
-    });
-
-});
-</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="main.js"></script>
+<!--- <script type="text/javascript"> </script> -->
 
 </head>
 <body>
