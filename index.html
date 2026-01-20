@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Rishi Kowalski</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    console.log( "ready!" );
+
+    $(".extension").hide();
+    $(".readless").hide();
+
+    $(".readmore").click(function(e){
+        e.preventDefault();
+        $(this).next(".extension").show();
+        $(this).parent().find(".readless").show();
+        $(this).hide();
+        $(this).parent().next(".readless").hide();
+    });
+
+    $(".readless").click(function(e){
+        e.preventDefault();
+        $(this).prev(".extension").hide();
+        $(this).parent().find(".readmore").show();
+        $(this).hide();
+    });
+
+});
+</script>
+
+</head>
+<body>
+ <div class="image-container", style = "max-width: 500px;">
+   <img src="003669180026.jpg" alt = "sitepic"/>
+ </div>
+ <div id = "bio">
+   Rishi Kowalski is a public health worker and data scientist currently working at the Department of Envrionmental Medicine at the Icahn School of Medicine at Mount Sinai. 
+  </div> 
+  <div id = "mssm-intro">
+   <span id = "bio1" class = "readmore">
+     <a href="#">(research)</a>
+  </span>
+  <span class = "extension">
+     <br>
+     Ongoing research contributions include geospatial statistics assessing environmental drivers of Highly Pathogenic Avian Influenza (H5N1) transmission in farms, data cleaning and statistical work evaluating SARS-CoV-2 transmission in New York City schools, and statistical and survey work estimating the burden of Chagas' Disease within NYC residents. Recent publications can be found <a href="https://scholar.google.com/scholar?scisbd=1&q=%22rishi+kowalski%22&hl=en&as_sdt=0,14"> here</a>.
+   </span>
+  <span id = "bio1" class = "readless">
+     <a href="#">(less)</a>
+   </span>
+ </div>
+  <div id = "prev-intro">
+  <span id = "bio2" class = "readmore">
+     <a href="#">(previous positions)</a>
+  </span>
+  <span class = "extension">
+    <br>
+    Rishi previously worked for the Cook County Department of Public Health (CCDPH), primarily on problems relating to syndromic surveillance of opioid-involved overdoses, and communicable diseases. He also worked in wastewater surveillance; some code relating to classification of wastewater viral trends can be found <a href = "https://github.com/Cook-County-Department-of-Public-Health/ccdph-functions/blob/master/ww-helper-script.R"> here</a>.
+    <br>
+    <br>
+    From 2018-2020, Rishi was a tactical data and video analyst for the United States Soccer Federation.
+  </span>
+  <span id = "bio2" class = "readless">
+     <a href="#">(less)</a>
+   </span>
+   </div>
+   <br>
+   Other data-related activities include volunteer data visualization work for the Chicago Recovery Alliance and survey consulting.
+   <br>
+   <br>
+   Recent photo and video work includes album art for Poetmistry's forthcoming album STRAWBERRY, and credit on Andrew Laudone's forthcoming film Seething Void.
+
+  <div class = "footer"><strong>Rishi can be reached at rishi_kowalski1 at proton dot me.</strong></div>
+ </body>
+</html>
+
+
+
